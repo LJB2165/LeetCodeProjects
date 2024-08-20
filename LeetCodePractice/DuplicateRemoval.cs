@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodePractice
 {
-    public class Solution
+    public class RemoveDuplicatesSolution
     {
         public int RemoveDuplicates(int[] nums)
         {
@@ -26,5 +26,6 @@ namespace LeetCodePractice
         }
     }
 }
+
 
 

@@ -1,17 +1,18 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using LeetCodePractice;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace LeetCodePractice.Tests
+namespace LeetCodePracticeTests
 {
-
     [TestClass]
-    public class RemoveDuplicatesTests
+    public class RemoveDuplicatesSolutionTests
     {
+        private readonly RemoveDuplicatesSolution _solution;
+
+        public RemoveDuplicatesSolutionTests()
+        {
+            _solution = new RemoveDuplicatesSolution();
+        }
+
         [TestMethod]
         public void RemoveDuplicates_AllUniqueElements_ShouldReturnCorrectCount()
         {
@@ -21,8 +22,7 @@ namespace LeetCodePractice.Tests
             int[] expectedArray = { 1, 2, 3, 4, 5 };
 
             // Act
-            Solution solution = new Solution();
-            int actualCount = solution.RemoveDuplicates(nums);
+            int actualCount = _solution.RemoveDuplicates(nums);
 
             // Assert
             Assert.AreEqual(expectedCount, actualCount);
@@ -38,8 +38,7 @@ namespace LeetCodePractice.Tests
             int[] expectedArray = { 1, 2, 3 };
 
             // Act
-            Solution solution = new Solution();
-            int actualCount = solution.RemoveDuplicates(nums);
+            int actualCount = _solution.RemoveDuplicates(nums);
 
             // Assert
             Assert.AreEqual(expectedCount, actualCount);
@@ -55,8 +54,7 @@ namespace LeetCodePractice.Tests
             int[] expectedArray = { 2 };
 
             // Act
-            Solution solution = new Solution();
-            int actualCount = solution.RemoveDuplicates(nums);
+            int actualCount = _solution.RemoveDuplicates(nums);
 
             // Assert
             Assert.AreEqual(expectedCount, actualCount);
@@ -72,8 +70,7 @@ namespace LeetCodePractice.Tests
             int[] expectedArray = { };
 
             // Act
-            Solution solution = new Solution();
-            int actualCount = solution.RemoveDuplicates(nums);
+            int actualCount = _solution.RemoveDuplicates(nums);
 
             // Assert
             Assert.AreEqual(expectedCount, actualCount);
@@ -89,8 +86,7 @@ namespace LeetCodePractice.Tests
             int[] expectedArray = { 7 };
 
             // Act
-            Solution solution = new Solution();
-            int actualCount = solution.RemoveDuplicates(nums);
+            int actualCount = _solution.RemoveDuplicates(nums);
 
             // Assert
             Assert.AreEqual(expectedCount, actualCount);
@@ -106,8 +102,7 @@ namespace LeetCodePractice.Tests
             int[] expectedArray = { 0, 1, 2, 3, 4 };
 
             // Act
-            Solution solution = new Solution();
-            int actualCount = solution.RemoveDuplicates(nums);
+            int actualCount = _solution.RemoveDuplicates(nums);
 
             // Assert
             Assert.AreEqual(expectedCount, actualCount);
